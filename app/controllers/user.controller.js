@@ -100,9 +100,7 @@ const updateUserCtrl = (req, res)=>{
 
 
 const deleteUser = (req, res)=>{
-  console.log("parameters: "+ req.params.id +
-  ", " + req.params.p1 +
-  ", " + req.params.p2 );
+  console.log("parameters: "+ req.params.id);
 
   User.removeUser(req.params.id, (err, result)=>{
     if(err){

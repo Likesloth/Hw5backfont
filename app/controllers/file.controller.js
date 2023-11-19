@@ -1,7 +1,6 @@
 const uploadFile = require("../middleware/upload");
 const uploadController = async (req, res)=>{
   try {
-    console.log("file controler");
     await uploadFile(req, res);
     if(req.file == undefined){
       return res.status(400).send({
